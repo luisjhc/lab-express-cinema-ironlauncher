@@ -35,4 +35,3 @@ app.use('/movies', moviesRoutes);
 require('./error-handling')(app);
 
 module.exports = app;
-/* testing */
