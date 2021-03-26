@@ -1,0 +1,10 @@
+<form action="/auth/signup" method="POST">
+  <input type="text" name="username" placeholder="Username" required>
+  <input type="email" name="email" required placeholder="Email" required>
+  <input type="password" name="password" placeholder="Password" min="8">
+  <button type="submit">Sign up</button>
+</form>
+
+{{#if errorMessage}}
+<h1 style="color: red;">{{errorMessage}}</h1>
+{{/if}}
