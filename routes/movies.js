@@ -15,12 +15,13 @@ router.get("/", isLoggedMiddleware, (req, res, next) => {
 
 //Movie Details page
 router.get("/:movieId", (req, res, next) => {
-  if(req.session.user) {
+  if(!req.session.user) {
+    res.redirect("/")
+  }
     Movie.findOne({ _id: req.params.movieId }).then((movieDetails) => {
       //console.log("movie details: ", movieDetails);
       res.render("movie-details", {movieDetails});
     });
-  }
 });
 
 module.exports = router;
