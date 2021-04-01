@@ -46,7 +46,7 @@ module.exports = (app) => {
       resave: false,
       saveUninitialized: false,
       store: MongoStore.create({
-        mongoUrl: process.env.MONGODB_URI || "mongodb://localhost/express-cinema",
+        mongoUrl: process.env.MONGODB_URI || "mongodb://localhost/ironlauncher-cinema",
       }),
     })
   );
