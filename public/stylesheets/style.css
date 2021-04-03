@@ -57,13 +57,18 @@ body {
   align-items: center;
   margin: 20px;
 }
-
+.containerMovies img {
+  width: 182px;
+  height: 268px;
+}
 /* Movie-details page */
 .main {
   display: flex;
 }
 .main img {
   margin: 30px;
+  width: 182px;
+  height: 278px;
 }
 .details {
   width: 900px;

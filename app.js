@@ -44,6 +44,9 @@ app.use("/auth", authRoutes);
 const profileRoutes = require("./routes/profile");
 app.use("/profile", profileRoutes);
 
+const createMovieRoutes = require("./routes/create-movie");
+app.use("/create-movie", createMovieRoutes);
+
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app);
 

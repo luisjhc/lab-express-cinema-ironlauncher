@@ -8,7 +8,6 @@ const movieSchema = new Schema({
   },
   director: {
     type: String,
-    required: true,
   },
   stars: {
     type: [String],
@@ -22,6 +21,9 @@ const movieSchema = new Schema({
   showtimes: {
     type: [String],
   },
+  imageUrl: {
+    type: String,
+  }
 });
 
 const Movie = model("Movie", movieSchema);

@@ -20,7 +20,7 @@ mongoose
   })
   .then((x) => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`);
-    x.connection.dropDatabase();
+    x.connection.dropCollection("movies");
     const movies = [
       {
         title: 'A Wrinkle in Time',
